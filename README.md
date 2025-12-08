@@ -1,67 +1,113 @@
-# STACKSWORTH Web Flasher
+# ⚡ STACKSWORTH Web Flasher  
+### Flash Your ₿itcoin Dashboard in Seconds
 
-Flash your STACKSWORTH device right from your browser — no apps, no drivers, just plug in and go.
+Welcome to the official **STACKSWORTH Web Flasher**, the easiest and fastest way to install firmware on your STACKSWORTH devices — Matrix, Spark, Pulse, Edge, and Infinity.
 
-![STACKSWORTH Banner](https://github.com/BitcoinManor/STACKSWORTH_Webflasher/blob/main/assets/stacksworth_logo.png)
-
-This is the official Web Flasher for STACKSWORTH devices like the **Spark**. Whether you’re setting up for the first time or updating firmware, this tool gets you going in seconds.
-
----
-
-## 🚀 How to Flash Your Device
-
-1. Go to:  
-   👉 https://bitcoinmanor.github.io/STACKSWORTH_WebFlasher
-
-2. Plug your **ESP32-based STACKSWORTH device** into your computer via USB
-
-3. Click **“Connect”** to choose your device’s port
-
-4. Hit **“Flash”** to upload the latest firmware
-
-5. Wait for confirmation — your device will reboot automatically when done
-
-> Tip: If your device doesn’t enter flashing mode automatically, hold **BOOT** (if present), tap **RESET/EN**, then release **BOOT** once flashing starts.
+This tool is built for **self-sovereign hardware**, simple upgrades, and a seamless onboarding experience.
 
 ---
 
-## ✅ What You Need
+## ✨ What This Does
+With this Web Flasher, you can:
 
-- A STACKSWORTH **Spark** (ESP32-based)
-- A Chromium browser with Web Serial (Chrome, Edge, Brave, Opera)
-- A **USB data** cable (not just a charge cable)
+- 🔌 Connect your STACKSWORTH device over USB  
+- 📶 Enter Wi-Fi + location details  
+- ⚙️ Erase old firmware  
+- ⚡ Flash the newest firmware instantly  
+- 🚀 Boot your device into its Bitcoin dashboard
 
----
-
-## ✨ Features
-
-- 1-click flashing in the browser
-- No installs or drivers on supported systems
-- Progress + status feedback while flashing
-- Designed for STACKSWORTH devices; other ESP32 boards may work
+Everything runs **in your browser** using Web Serial — no apps, no installs, no drivers.
 
 ---
 
-## 🧰 Troubleshooting
+## 🖥 Supported Models (2025)
+| Model | Status |
+|-------|--------|
+| **STACKSWORTH Matrix** | ✅ Fully supported |
+| **STACKSWORTH Spark** | 🧪 Beta (coming soon) |
+| **STACKSWORTH Pulse** | ⏳ Placeholder |
+| **STACKSWORTH Edge** | ⏳ Placeholder |
+| **STACKSWORTH Infinity** | ⏳ Placeholder |
 
-- **No ports appear:** Use a Chromium browser; try a different USB cable/port; close other apps using the serial port (Arduino IDE, Serial Monitor).
-- **Device won’t flash:** Hold **BOOT**, click **Flash**, tap **RESET/EN**, then release **BOOT** after flashing starts.
-- **Permission blocked:** If prompted, allow the site to access serial devices.
-
----
-
-## 🔐 Privacy & Security
-
-Flashing runs locally in your browser using Web Serial. No device data is uploaded to any server.
-
----
-
-## 📬 Questions?
-
-- Project hub: https://github.com/BitcoinManor  
-- X/Twitter: https://x.com/BitcoinManor
+More models will be added as firmware packages are completed.
 
 ---
 
-MIT License — flash freely, share widely.  
-STACKSWORTH Web Flasher
+## 🚀 How to Use the Web Flasher
+
+### **1. Connect Your Device**
+Plug in your STACKSWORTH unit and click **“Connect to Device.”**
+
+### **2. Select Your Model**
+Choose Matrix, Spark (Beta), Pulse, Edge, or Infinity.
+
+### **3. Enter Configuration**
+Add:
+- Wi-Fi name  
+- Wi-Fi password  
+- City (weather)  
+- Timezone  
+
+### **4. Flash the Firmware**
+Pick your firmware version and click **“Flash Firmware.”**  
+The Web Flasher handles everything automatically.
+
+### **5. Enjoy the Bitcoin Magic**
+Your STACKSWORTH device will reboot and display live Bitcoin data.
+
+---
+
+## 🔥 Firmware Downloads
+Firmware is served from GitHub Pages or official Stacksworth repos.
+
+### **Matrix**
+- **v1.1**  
+  https://bitcoinmanor.github.io/BlokdBit-Matrix/BlokdBit_Matrix_FINAL_SKETCH4Flasher.ino.nodemcu-32s.bin
+
+(Older versions available in the Matrix repo.)
+
+---
+
+## 🧩 Repo Structure
+
+/assets        → Logos + icons
+/libs          → esptool-js bundle
+index.html     → Web Flasher UI & logic
+README.md      → You are here
+
+---
+
+## 🛠 Tech Used
+- Web Serial API  
+- esptool-js (ESPLoader + WebSerialTransport)  
+- Vanilla HTML/CSS/JS  
+- Hosted via GitHub Pages for maximum accessibility  
+
+---
+
+## 🧡 Stacksworth & Bitcoin Manor
+This project is part of the **STACKSWORTH ecosystem** — handcrafted Bitcoin displays engineered for your home, workspace, studio, or node room.
+
+Follow the journey:
+
+- ❌ **X / Twitter:** https://x.com/stacksworth  
+- 📸 **Instagram:** https://instagram.com/stacksworth  
+- 🌐 **Website:** https://stacksworth.com  
+- 🌐 **Bitcoin Manor:** https://bitcoinmanor.com
+
+---
+
+## ⚖️ License
+This project is released under the **MIT License**.  
+Use it. Fork it. Improve it. Build sovereign tools.
+
+---
+
+## 💥 Contributions
+PRs, UI fixes, and firmware additions are always welcome.  
+Let’s build tools the Bitcoin world actually needs.
+
+---
+
+## 🟧 Built with passion by Bitcoin Manor  
+“**Where Data Comes to Life.**”
