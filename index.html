@@ -236,20 +236,45 @@
   letter-spacing: 0.5px;
   text-shadow: 0 0 10px rgba(252, 164, 32, 0.35);
 }
-    
+
+.nav-logo {
+  height: 26px;
+  margin-right: 12px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.35));
+}
+
+.nav-item {
+  margin: 0 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: #00eaff;
+  transition: 0.2s ease-in-out;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.25);
+}
+
+.nav-item:hover {
+  color: #fca420;
+  text-shadow: 0 0 10px rgba(252, 164, 32, 0.35);
+  transform: translateY(-1px);
+}
   
   </style>
+
+  
 </head>
 <body>
   <div class="navbar">
-    <div class="tabs">
-      <img src="assets/stacksworth_logo_icon.png" alt="Logo" style="height: 24px; margin-right: 8px; vertical-align: middle;">
-      <span onclick="togglePopup('start')">Getting Started</span>
-      <span>Language ▾</span>
-      <span id="themeToggle" onclick="toggleTheme()">🌙</span>
-      <span onclick="togglePopup('socials')">Contact / Socials</span>
-    </div>
+  <div class="tabs">
+    <img src="assets/stacksworth_logo_icon.png" alt="Logo" class="nav-logo">
+
+    <span class="nav-item" onclick="togglePopup('start')">🚀 Getting Started</span>
+    <span class="nav-item">🌐 Language</span>
+    <span class="nav-item" id="themeToggle" onclick="toggleTheme()">🌙 Theme</span>
+    <span class="nav-item" onclick="togglePopup('socials')">📡 Contact</span>
   </div>
+</div>
 
   <div class="popup" id="start" style="top: 50px; left: 20px; width: 280px;">
     <div class="close" onclick="togglePopup('start')">✖</div>
