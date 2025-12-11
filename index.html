@@ -259,8 +259,71 @@
   text-shadow: 0 0 10px rgba(252, 164, 32, 0.35);
   transform: translateY(-1px);
 }
-  
-  </style>
+
+/* LIGHT MODE ------------------------------------------------------- */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .navbar {
+  border-bottom: 1px solid #ccc;
+}
+
+.light-mode .nav-item {
+  color: #0066aa;
+  text-shadow: none;
+}
+
+.light-mode .nav-item:hover {
+  color: #d47c00;
+}
+
+.light-mode .column {
+  background: #f3f3f3;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.light-mode input,
+.light-mode select {
+  background-color: #ffffff;
+  border: 2px solid #bbb;
+  color: #000;
+}
+
+.light-mode input::placeholder {
+  color: #777;
+}
+
+.light-mode input:focus,
+.light-mode select:focus {
+  border-color: #d47c00;
+  background-color: #fff;
+}
+
+.light-mode .outline-btn {
+  border-color: #d47c00;
+  color: #d47c00;
+}
+
+.light-mode .outline-btn:hover {
+  background-color: rgba(212,124,0,0.1);
+}
+
+.light-mode .log-container {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ddd;
+}
+
+.light-mode .footer {
+  background: #f0f0f0;
+  color: #444;
+  box-shadow: none;
+}
+    
+</style>
 
   
 </head>
@@ -401,11 +464,10 @@
     }
 
     function toggleTheme() {
-      const isDark = document.body.classList.toggle("light-mode");
-      document.body.style.backgroundColor = isDark ? "#fff" : "#1a1a1a";
-      document.body.style.color = isDark ? "#000" : "#fff";
-      document.getElementById("themeToggle").innerText = isDark ? "☀️" : "🌙";
+      const isLight = document.body.classList.toggle("light-mode");
+      document.getElementById("themeToggle").innerText = isLight ? "☀️" : "🌙";
     }
+
 
 
     // Initialize the device variable to store the connected device
