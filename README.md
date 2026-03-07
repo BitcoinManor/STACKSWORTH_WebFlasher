@@ -22,7 +22,7 @@ STACKSWORTH WEBFLASHER
 https://bitcoinmanor.github.io/STACKSWORTH_WebFlasher/
 ---
 
-## 🖥 Supported Models (2025)
+## 🖥 Supported Models (2026)
 | Model | Status |
 |-------|--------|
 | **STACKSWORTH Matrix** | ✅ Fully supported |
